@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    
+}
+
+h1, h2 { 
+  
+    
+}
+p {
+    
+
+}
+
+.logo{
+    width:180px;
+}
+
+header{
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    
+}
+
+nav{
+    margin: 40px 100px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    
+}
+
+section{
+    display: flex;
+    margin-left: 6%;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+section article{
+    width: 43%;
+    
+    
+}
+section article h1{
+    font-size: 80px;
+    margin-top: 100px;
+}
+span{
+    color:#006241;
+    font-weight: bold;
+}
+
+article button{
+    background-color: #006241;
+    padding: 8px;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+    width: 100px;
+    font-family: 'Montserrat';
+    
+}
+
+ .imagem-destaque img {
+    width: 400px;
+    margin-left: 33%;
+    
+}
+.icones-sociais{
+    margin-top: 200px;
+}
+.icones img{
+    width: 50px;
+    display: flex;
+   flex-direction: column;
+    padding: 10px;
+    
+     
+}
+
+.produtos-bottom {
+    /* Mantenha o posicionamento FIXO na janela de visualização (viewport) */
+    position: fixed; 
+    
+    /* Cola o elemento na base da tela */
+    bottom: 0; 
+    
+    /* Etapa 1 da centralização: Empurra o elemento 50% para a direita */
+    left: 50%; 
+    
+    /* Etapa 2 da centralização: Puxa o elemento de volta pela metade de sua própria largura */
+    transform: translateX(-50%); 
+    
+    /* Opcional, para dar um respiro */
+    padding-bottom: 20px; 
+    
+    /* IMPORTANTE: Garanta que o container tenha uma largura *apropriada* para centralizar.
+       Se ele for 100% de largura, o "centralizar" não terá efeito visual. 
+       Para as suas três imagens, a largura deve ser pequena. */
+    width: auto; 
+    /* ou defina uma largura fixa: width: 200px; */ 
+    
+    /* Opcional: Adiciona espaçamento entre as imagens, se necessário */
+    display: flex;
+    gap: 20px; /* Adiciona 20px de espaço entre as imagens */
+}
+
+/* Opcional, mas recomendado: centraliza as imagens dentro do container */
+.produtos-bottom img {
+    width: 55px;
+}
+
+
+    
+
+.fundo-verde {
+  background-color: #006241; /* Seu verde Starbucks */
+  position: absolute; /* Posição absoluta em relação ao pai (section) */
+  bottom:  0; /* Cola no topo do pai */
+  right: 0; /* Cola na direita do pai */
+  width: 40%; /* Ocupa 50% da largura do pai */
+  height: 80%; /* Ocupa 100% da altura do pai (que é 100vh) */
+  z-index: -1; /* FUNDAMENTAL: Coloca este elemento "abaixo" dos outros */
+  border-top-left-radius: 1000px;
+}
